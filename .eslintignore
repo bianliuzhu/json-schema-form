@@ -15,4 +15,5 @@ dist
 .eslintrc.js
 prettier.config.js
 /src/mocks/*
+/schema-test
 
