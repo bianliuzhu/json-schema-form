@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "ajv": "^8.11.0",
+    "ajv-errors": "^3.0.0",
+    "ajv-formats": "^2.1.1",
+    "ajv-i18n": "^4.2.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
