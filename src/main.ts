@@ -1,3 +1,3 @@
 import { createApp, h } from "vue";
-import APPE from "./Appe";
-createApp(APPE).mount("#app");
+import APP from "./App";
+createApp(APP).mount("#app");
