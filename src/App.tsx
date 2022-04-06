@@ -2,7 +2,7 @@ import { defineComponent, reactive, ref, Ref, watchEffect } from "vue";
 import { createUseStyles } from "vue-jss";
 import MonacoEditor from "./components/monaco-editor";
 import demos from "./demos";
-// import SchemaForm from "../lib";
+import SchemaForm from "../lib";
 
 // TODO: 在lib张export
 type Schema = any;
@@ -173,7 +173,9 @@ export default defineComponent({
 								/>
 							</div>
 						</div>
-						<div class={classes.form}>这里是 schema</div>
+						<div class={classes.form}>
+							<SchemaForm></SchemaForm>
+						</div>
 					</div>
 				</div>
 			);
