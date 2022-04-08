@@ -95,7 +95,7 @@ export default defineComponent({
 		watchEffect(() => {
 			const index = selectdRef.value;
 			const d = demos[index];
-			demo.schema = d.schema;
+			demo.schema = d?.schema;
 			demo.data = d.default;
 			demo.uiSchema = d.uiSchema;
 			demo.schemaCode = toJson(d.schema);
@@ -174,7 +174,11 @@ export default defineComponent({
 							</div>
 						</div>
 						<div class={classes.form}>
-							<SchemaForm></SchemaForm>
+							<SchemaForm
+								schema={demo.schema}
+								onChange={handleChange}
+								value={demo.data}
+							/>
 						</div>
 					</div>
 				</div>

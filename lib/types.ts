@@ -11,7 +11,7 @@ export enum SchemaTypes {
 // 这里的 schema 可以做一些预先定义，通过 $ref 来去引用这个部分的 schema
 type SchemaRef = { $ref: string };
 
-declare interface Schema {
+export interface Schema {
 	// 这里加 string 类型的原因是因为后面再写的时候，除了写成 SchemaTypes.NUMBER 还可以直接写 string
 	type?: SchemaTypes | string;
 	const?: any;

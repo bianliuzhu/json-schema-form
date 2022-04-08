@@ -11,7 +11,7 @@
 		"esModuleInterop": true,
 		"lib": ["esnext", "dom"]
 	},
-	"files": ["lib/types.d.ts"],
+	"files": ["lib/types.ts"],
 	"include": [
 		"src/**/*.ts",
 		"src/**/*.d.ts",
